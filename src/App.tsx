@@ -59,13 +59,19 @@ const App = () => {
         answer, // answer: answer
         correct,
         correctAnswer: questions[number].correct_answer,
-      }
-      setUserAnswers(prev => [...prev, answerObject])
+      };
+      setUserAnswers((prev) => [...prev, answerObject]);
     }
   };
 
   const nextQuestion = () => {
-    
+    const nextQuestion = number + 1;
+
+    if (nextQuestion === TOTAL_QUESTIONS) {
+      setGameOver(true);
+    } else {
+      setNumber(nextQuestion);
+    }
   };
 
   return (
