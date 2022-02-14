@@ -28,8 +28,8 @@ export const Wrapper = styled.div`
     justify-content: center;
 
     > p {
-        color: #fff;s
-    }
+        color: #fff;
+    };
 
     .score {
         color: #fff;
@@ -61,10 +61,10 @@ export const Wrapper = styled.div`
         border-radius: 10px;
         height: 40px;
         margin: 20px 0;
-        padding 0 40px;
+        padding: 0 40px;
     }
 
     .start {
         max-width: 200px;
     }
-`
+`;
